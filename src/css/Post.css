@@ -1,0 +1,32 @@
+.single-post {
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.single-post header h1 {
+  color: #0066cc;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.single-post .post-wrapper {
+  border: 1px solid #d3d3d3;
+  padding: 1rem;
+}
+
+.single-post .post-content {
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .single-post {
+    width: 80%;
+  }
+}

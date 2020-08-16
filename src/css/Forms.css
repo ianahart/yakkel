@@ -1,0 +1,182 @@
+.signup,
+.login,
+.create-post,
+.edit-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.signup form,
+.login form,
+.create-post form,
+.edit-post form {
+  background-color: #f9f9f9;
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4.5rem 8rem;
+}
+
+.signup form h1,
+.create-post form h1,
+.login form h1,
+.edit-post form h1 {
+  color: #0066cc;
+  margin-bottom: 0;
+}
+
+.signup form .title-divider,
+.create-post form .title-divider,
+.edit-post form .title-divider {
+  background-color: #ff7f00;
+  height: 3px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.login form .title-divider {
+  background-color: #ff7f00;
+  height: 3px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.signup-form-error,
+.create-post-form-error,
+.login-form-error,
+.create-post-form-error {
+  color: red;
+  font-size: 0.75rem;
+}
+
+.create-post .success-msg,
+.edit-post .success-msg {
+  color: green;
+  font-size: 0.7rem;
+}
+
+.signup form .field-group,
+.create-post form .field-group,
+.login form .field-group,
+.edit-post form .field-group {
+  margin: 1rem;
+}
+
+.field-group label {
+  display: flex;
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+.signup form input,
+.create-post form input,
+.login form input,
+.create-post textarea,
+.edit-post form input,
+.edit-post form textarea {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  border: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.25rem;
+  height: 1.5rem;
+}
+
+.create-post textarea,
+.edit-post .field-group textarea {
+  height: 200px;
+}
+
+.signup form button,
+.create-post form button,
+.login form button,
+.edit-post form button {
+  background-color: #ff7f00;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: whitesmoke;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.signup form button:hover,
+.create-post form button:hover,
+.edit-post form button:hover,
+.login form button:hover {
+  background-color: #fff;
+  border: 2px solid #ff7f00;
+  color: #333;
+}
+
+.edit-post .previous-image {
+  font-size: 0.75rem;
+  color: #0066cc;
+}
+
+.login .register {
+  margin-bottom: 2rem;
+}
+
+.login .register p {
+  color: #333;
+  font-size: 0.6rem;
+}
+
+.login .register p a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+input#image-upload {
+  border: none;
+}
+
+.size-error {
+  font-size: 0.7rem;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .signup form,
+  .create-post form,
+  .edit-post form,
+  .login form {
+    max-width: 90%;
+    padding: 2.5rem;
+  }
+  .create-post form,
+  .edit-post form {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .signup form input,
+  .create-post form input,
+  .edit-post form input,
+  .login form input {
+    width: 200px;
+  }
+
+  .signup form h1,
+  .create-post form h1,
+  .edit-post form h1,
+  .login form h1 {
+    font-size: 1rem;
+  }
+
+  .login form .title-divider {
+    width: 40%;
+  }
+  .create-post textarea,
+  .edit-post .field-group textarea {
+    margin: 0 auto;
+    width: 300px;
+  }
+}

@@ -1,0 +1,20 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.not-found .not-found-content {
+  background-color: #0066cc;
+  padding: 3rem;
+}
+
+.not-found .not-found-content h1 {
+  color: whitesmoke;
+}
+
+.not-found .not-found-content h1 span {
+  color: tomato;
+  font-size: 3rem;
+}

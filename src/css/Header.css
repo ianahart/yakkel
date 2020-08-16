@@ -1,0 +1,88 @@
+.header {
+  background-color: #0080ff;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.header .navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header .navbar ul .brand-name {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.header .navbar ul .brand-name i {
+  color: #ff7f00;
+}
+
+.header .navbar ul li {
+  margin: 0 1rem;
+}
+
+.header .navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all ease-out 0.5s;
+}
+
+.header .navbar ul li a:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 2rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hide {
+  display: none;
+}
+
+.signout {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: whitesmoke;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.signout:hover {
+  color: #333;
+}
+
+/* ACCOUNT DETAILS */
+.header li .account-details-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+  transition: all 0.5s ease-out;
+}
+
+.header li .account-details-btn:hover {
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .header .navbar ul .brand-name {
+    margin-bottom: 1rem;
+  }
+}

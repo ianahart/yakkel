@@ -1,0 +1,77 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #333;
+}
+
+.home .image-container {
+  grid-column: 1 /3;
+}
+
+.home-image {
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.home-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.home-main-content h1 {
+  color: #ff7f00;
+}
+
+.home-main-content h3 span {
+  color: #ff7f00;
+}
+
+.ribbon-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #0080ff;
+}
+
+.merits i {
+  color: #ff7f00;
+}
+
+.merits span {
+  background-color: #f4f4f4;
+  font-size: 0.75rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-image {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home-main-content {
+    margin: 0 1rem;
+  }
+  .ribbon-icon {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .merits {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+}

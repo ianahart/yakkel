@@ -1,0 +1,96 @@
+.account-details {
+  background-color: whitesmoke;
+  width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.account-details p {
+  color: #333;
+}
+
+.account-details p span {
+  color: #0066cc;
+}
+
+.account-details .main-account-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.account-details .main-account-content button {
+  background-color: #d3d3d3;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease-out;
+  font-size: 1rem;
+  color: #0066cc;
+}
+
+.account-details .main-account-content button:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #0066cc;
+}
+
+.account-details .main-account-content button .logout-icon {
+  color: #ff7f00;
+}
+
+.account-details .main-account-content button:last-of-type {
+  background-color: #0066cc;
+  transition: all 0.5s ease-out;
+}
+
+.account-details .main-account-content button:last-of-type:hover {
+  color: whitesmoke;
+  background-color: #0080ff;
+}
+
+.account-details .main-account-content button:last-of-type a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.account-details .main-account-content .reading-list-icon {
+  color: whitesmoke;
+  padding-right: 0.5rem;
+}
+
+.account-details .styled-border {
+  background-color: #0066cc;
+  height: 50px;
+  color: whitesmoke;
+  position: relative;
+}
+
+.account-details .styled-border div:first-child {
+  position: absolute;
+  right: 5px;
+  top: 1px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .account-details {
+    position: absolute;
+    right: 50px;
+    width: 250px;
+  }
+
+  .account-details .main-account-content {
+    padding: 1rem;
+  }
+
+  .account-details p {
+    font-size: 0.75rem;
+  }
+}
